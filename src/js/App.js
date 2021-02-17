@@ -1,16 +1,36 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 // global styles
 import GlobalStyle from './components/GlobalStyle';
+//components
+import Nav from './components/Nav';
+import MovieDetail from './pages/MoveDetail';
 
 //import page
 import AboutUs from './pages/AboutUs';
+import OutWork from './pages/OurWork';
+import ContactUs from './pages/ContactUs';
 
 
 const App = () => {
   return ( 
     <div className="app">
-      <AboutUs />
       <GlobalStyle />
+      <Nav />
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+        <Route path="/work" exact>
+          <OutWork />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail />
+        </Route>
+        <Route path="/contact" exact>
+          <ContactUs />
+        </Route>
+      </Switch>
     </div>
    );
 }

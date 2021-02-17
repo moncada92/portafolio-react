@@ -53,7 +53,9 @@ const ServicesSection = () => {
 }
  
 const Services = styled(About)`
+
   h2 {
+    padding-top: 2rem;
     padding-bottom: 5rem;
   }
   p {
@@ -65,10 +67,11 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const Card  = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 13rem;
   .icon {
     display: flex;
     align-items: center;
