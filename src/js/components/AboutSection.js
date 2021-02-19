@@ -6,6 +6,10 @@ import { About, Description, Hide, Image } from '../styles';
 
 //framer Motion
 import { motion } from 'framer-motion';
+import { titleAnim, fade, photoAnim } from  '../animation'
+
+//components
+import Wave from './Wave';
 
 
 const AboutSection = () => {
@@ -15,24 +19,25 @@ const AboutSection = () => {
       <Description>
         <motion.div className="title">
           <Hide>
-            <motion.h2>We work to make</motion.h2>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnim}>
               your <span>dreamd</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnim}>
             come true.</motion.h2>
           </Hide>
         </motion.div>
-        <p>Contact us for any photography or videography ideas that you have. We have professionals with amizing skills</p>
-        <button>Contact us</button>
+        <motion.p variants={fade}>Contact us for any photography or videography ideas that you have. We have professionals with amizing skills</motion.p>
+        <motion.button variants={fade}>Contact us</motion.button>
       </Description>
       <Image>
-        <img src={home1} alt="guy with a camer"/>
+        <motion.img variants={photoAnim} src={home1} alt="guy with a camer"/>
       </Image>
+      <Wave />
     </About>
    );
 }
