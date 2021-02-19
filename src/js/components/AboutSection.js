@@ -6,7 +6,7 @@ import { About, Description, Hide, Image } from '../styles';
 
 //framer Motion
 import { motion } from 'framer-motion';
-import { titleAnim, fade, photoAnim } from  '../animation'
+import { titleAnim, fade, photoAnim} from  '../animation'
 
 //components
 import Wave from './Wave';
