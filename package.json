@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "create an awesome portafolio web",
   "main": "index.js",
+  "homepage": "http://moncada92.github.io/portafolio-react",
   "scripts": {
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d build",
     "prod": "webpack --config ./webpack.prod.js --mode=production",
     "dev": "webpack serve --config webpack.dev.js"
   },
@@ -42,6 +45,7 @@
     "@babel/runtime": "^7.12.5",
     "dotenv-webpack": "^6.0.0",
     "framer-motion": "^3.3.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",

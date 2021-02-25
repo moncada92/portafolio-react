@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './build'),
-    filename: 'js/[chunkhash][name].js',
+    filename: 'js/[name].js',
     publicPath: '/'
   },
   module:{
@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Protafolio',
+      title: 'Web Animation',
       template: path.resolve(__dirname, './src/index.html'),
       minify: false,
     }),
