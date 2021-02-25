@@ -10,7 +10,7 @@ this proyect was realized with:
 
 <img src="https://img.shields.io/badge/react-router-%2300c4e6.svg?&style=for-the-badge&logo=react-router&logoColor=white" alt="React Router"/>
 <img src="https://img.shields.io/badge/react-%2300c4e6.svg?&style=for-the-badge&logo=react&logoColor=white" alt="React"/>
-<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=styled_component&logoColor=%23f7de1e" alt="Styled Component"/>
+<img src="https://img.shields.io/badge/styled_component%20-%23323330.svg?&style=for-the-badge&logo=styled&logoColor=%23f7de1e" alt="Styled Component"/>
 <img src="https://img.shields.io/badge/webpack-%235194f2.svg?&style=for-the-badge&logo=webpack&logoColor=white" alt="Webpack"/>
 
 ## Author
