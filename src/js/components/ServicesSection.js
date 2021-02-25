@@ -73,6 +73,9 @@ const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 1200px){ 
+    justify-content: center;
+  }
 `;
 
 const Card  = styled.div`
@@ -86,6 +89,10 @@ const Card  = styled.div`
       color: black;
       padding: 1rem;
     }
+  }
+
+  @media (max-width: 1200px){
+    margin: 0 1rem;
   }
 `;
 
