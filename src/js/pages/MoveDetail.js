@@ -20,13 +20,14 @@ const MovieDetail = () => {
 
   useEffect(() => {
 
-    const getMovie = movies.filter((stateMovie) => stateMovie.url === url );
+    const getMovie = movies.filter((stateMovie) => '/portafolio-react'+stateMovie.url === url );
 
     setMovie(getMovie[0]);
   }, [url, movies])
 
   return ( 
     <Fragment>
+    {console.log(movies, url)}
     { movie && 
       <Details
       variants={ pageAnimation }

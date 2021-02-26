@@ -37,7 +37,7 @@ const MovieContent = ({athlete, theracer, goodtimes}) => {
         <img src={theracer} alt="te racer"/>
       </Link>
     </Movie>
-    
+
     <Movie 
       ref={element2}
       variants={fade} 
