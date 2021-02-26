@@ -22,18 +22,18 @@ const App = () => {
     <div className="app">
       <GlobalStyle />
       <Nav />
-      
+
         <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
+          <Route path="/portafolio-react/" exact>
             <AboutUs />
           </Route>
-          <Route path="/work" exact>
+          <Route path="/portafolio-react/work" exact>
             <OutWork />
           </Route>
-          <Route path="/work/:id">
+          <Route path="/portafolio-react/work/:id">
             <MovieDetail />
           </Route>
-          <Route path="/contact" exact>
+          <Route path="/portafolio-react/contact" exact>
             <ContactUs />
           </Route>
         </Switch>
