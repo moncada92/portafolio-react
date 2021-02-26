@@ -19,7 +19,7 @@ const MovieContent = ({athlete, theracer, goodtimes}) => {
         animate={controls3}>
       <motion.h2 variants={ fade }>The Athlete</motion.h2>
       <motion.div variants={ lineAnim  } className="line"></motion.div>
-      <Link to="/work/the-athlete">
+      <Link to="/portafolio-react/work/the-athlete">
         <Hide>
           <motion.img variants={ photoAnim } src={athlete} alt="athlete"/>
         </Hide>
@@ -33,7 +33,7 @@ const MovieContent = ({athlete, theracer, goodtimes}) => {
       initial="hidden" >
       <h2>The Racer</h2>
       <motion.div variants={ lineAnim  } className="line"></motion.div>
-      <Link to="/work/the-racer">
+      <Link to="/portafolio-react/work/the-racer">
         <img src={theracer} alt="te racer"/>
       </Link>
     </Movie>
@@ -45,7 +45,7 @@ const MovieContent = ({athlete, theracer, goodtimes}) => {
       transition={{ duration: 0.5 }}>
       <h2>Good Times</h2>
       <motion.div variants={ lineAnim  } className="line"></motion.div>
-      <Link to="/work/good-times">
+      <Link to="/portafolio-react/work/good-times">
         <img src={goodtimes} alt="good times"/>
       </Link>
     </Movie>
