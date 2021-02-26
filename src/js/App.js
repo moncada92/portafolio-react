@@ -22,7 +22,7 @@ const App = () => {
     <div className="app">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
+   
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <AboutUs />
@@ -37,7 +37,7 @@ const App = () => {
             <ContactUs />
           </Route>
         </Switch>
-      </AnimatePresence>
+        
     </div>
    );
 }
