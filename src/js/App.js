@@ -17,27 +17,31 @@ import { AnimatePresence } from "framer-motion";
 
 const App = () => {
 
-  const location = useLocation();
+  //const location = useLocation();
   return ( 
     <div className="app">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/work" exact>
-            <OutWork />
-          </Route>
-          <Route path="/work/:id">
-            <MovieDetail />
-          </Route>
-          <Route path="/contact" exact>
-            <ContactUs />
-          </Route>
-        </Switch>
-      </AnimatePresence>
+      <Route 
+        render={({location}) => (
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Switch location={location} key={location.pathname}>
+              <Route path="/" exact key="about">
+                <AboutUs />
+              </Route>
+              <Route path="/work" exact>
+                <OutWork />
+              </Route>
+              <Route path="/work/:id">
+                <MovieDetail />
+              </Route>
+              <Route path="/contact" exact>
+                <ContactUs />
+              </Route>
+            </Switch>
+          </AnimatePresence>
+        )}
+      />
     </div>
    );
 }

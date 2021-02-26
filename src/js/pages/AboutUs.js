@@ -9,19 +9,20 @@ import { pageAnimation } from '../animation';
 
 import ScrollTop from '../components/ScrollTop';
 
-const AboutUs = () => {
-  return ( 
-    <motion.div
-      variants={ pageAnimation }
-      initial="hidden"
-      animate="show"
-      exit="exit"
-    >
-      <ScrollTop />
-      <AboutSection />
-      <ServicesSection />
-      <FaqSection />
-    </motion.div>
+const AboutUs = ({local}) => {
+  return (
+      <motion.div
+        key={local}
+        variants={ pageAnimation }
+        initial="hidden"
+        animate="show"
+        exit="exit"
+      >
+        <ScrollTop />
+        <AboutSection />
+        <ServicesSection />
+        <FaqSection />
+      </motion.div>
    );
 }
  
